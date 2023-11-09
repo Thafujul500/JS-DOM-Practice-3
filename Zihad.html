@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zihad DOM</title>
+
+
+</head>
+<body>
+
+    <h1>You have clicked any button.</h1>
+
+    <button class="my_button">Button 1 </button>
+
+    <button class="my_button">Button 2 </button>
+
+    <button class="my_button">Button 3 </button>
+
+    <script>
+
+        // button 1
+
+        // document.querySelectorAll(".my_button")[0].addEventListener("mouseover", function (){
+
+        //     var text = this.innerHTML;
+
+        //     document.querySelector("h1").innerHTML = text + "is clicked"
+
+
+        // })
+
+        // by for loop
+
+        for(var i = 0; i <= 2; i ++){
+
+            document.querySelectorAll(".my_button")[i].addEventListener("mouseout", function (){
+
+            var text = this.innerHTML;
+
+            document.querySelector("h1").innerHTML = text + "is clicked"
+            })
+        }
+        // button 2
+
+
+        document.querySelectorAll(".my_button")[1].addEventListener("mouseover", function (){
+
+        var text = this.innerHTML;
+
+        document.querySelector("h1").innerHTML = text + "is clicked"
+
+        })
+
+        // button 3
+
+        document.querySelectorAll(".my_button")[2].addEventListener("mouseover", function (){
+
+        var text = this.innerHTML;
+
+        document.querySelector("h1").innerHTML = text + "is clicked"
+
+        })
+    </script>
+
+</body>
+</html>

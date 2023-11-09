@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .para_style{
+            color: red;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Id/Class/Tag -->
+
+    <h1 id="headin_1">This is a heading.</h1>
+
+    <p id="para_1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium saepe iusto hic pariatur fugiat delectus eos repellendus expedita aperiam velit amet, provident autem doloribus totam excepturi modi, exercitationem culpa possimus corporis rem quia quo ea dolor? Placeat reprehenderit earum quo iste maiores nihil nemo a mollitia eius, repellat possimus ex?</p>
+
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quas delectus fuga illo corrupti quae dolorem soluta itaque eligendi labore!</h2>
+
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quas delectus fuga illo corrupti quae dolorem soluta itaque eligendi labore!</h2>
+
+    <p class="myClass" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos esse libero vero natus, quam, quis, commodi ducimus enim at voluptate distinctio quidem voluptatibus numquam modi. Qui minima magni itaque pariatur explicabo recusandae est quo numquam ipsam. Mollitia laudantium distinctio totam natus ab veritatis quia corrupti? Repu</p>
+
+    <!--        queary selector        -->
+
+    <p id="queary_para">this a a paragraph which is used for queary selector.</p>
+
+    <h1 class="queary_h1">this a a paragraph which is used for queary selector.</h1>
+
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta exercitationem quia accusamus. Nobis nulla, laudantium asperiores repellat eius exercitationem doloremque.</h3>
+
+    <!--    queary selector Advance    -->
+
+    <a href="#">Home</a>
+
+    <ul>
+        <li><a href="#">Country</a></li>
+        <li>Bangladesh/li>
+    </ul>
+
+    <div class="my_div">
+        <a href="#">Contarct</a>
+
+    </div>
+
+    <h4>I am h4</h4>
+    <h4>I am h4</h4>
+
+<!--         Onckick        -->
+
+<button onclick="alert('Hellow')" >Button</button>
+
+<button onclick="myMessage()" >Button</button>
+
+<p onclick="alert('I am Zihad!')" >Zihad</p>
+
+
+<p onclick="t()">Thafujul</p>
+
+<button onclick="fa()" >I am button</button>
+
+<p id="onak_para">Lorem ipsum dolor sit amet.</p>
+
+
+<button onclick="tha()">Thafujul</button>
+
+<p class="zi">zihad</p>
+
+
+<!-- A To Z DOM -->
+
+
+<!-- 
+    1. Find / Get.
+    2. Change.
+    3. Add / Or.
+    4. Delete HTML elements. 
+-->
+
+<!-- <p id="tt">Thafujul</p> -->
+
+<div id="my-div" style="background-color: gold;"> 
+    <h1>this.</h1>
+    <h1>that.</h1>
+
+</div>
+
+<!-- Go to the DOM Practice folder -->
+
+<!-- DOM traversing & manipulating -->
+
+    <br><br><br>
+
+    <p id="tha">Lorem ipsum dolor sit amet.</p>
+
+
+    <button onclick="color()">Thafujul</button>
+
+    <button onclick="discolor()">Thafujul</button>
+
+    <p>---------------------------------</p>
+
+    <button onclick="thablu1()">Click Me</button>
+
+    <button onclick="thablu2()">Click Me</button>
+
+    <button onclick="thablu3()">Click Me</button>
+
+    <p id="hablu">You have clicked</p>
+
+    <p id="p1">this is a para.</p>
+    <button  onmousedown="addstyle()" >Add Style</button>
+    <button onmouseout="removestyle()">Remove Style</button>
+
+    <!-- Event Listener -->
+
+    <button name="btnId">Click Me</button>
+
+    <p id="paraId">Lorem, ipsum.</p>
+
+    <h1 id="H1ID">Lorem ipsum dolor sit amet.</h1>
+    <script>
+
+    document.getElementsByName("btnId")[0].addEventListener("click", function () {
+
+        document.getElementById("paraId").classList.add("my_style")
+    });
+    
+    document.getElementsByName("btnId")[0].addEventListener("click", function () {
+
+    document.getElementById("paraId").classList.add("my_style")
+});
+
+document.getElementsByName("btnId")[0].addEventListener("click", function () {
+
+document.getElementById("paraId").classList.add("my_style")
+});
+    function fang(){
+        alert("Hey")
+    }
+
+    document.getElementById("H1ID").addEventListener("mouseover", function() {
+        document.getElementById("H1ID").classList.add("H1class")
+    })
+
+    document.getElementById("H1ID").addEventListener("mouseout", function() {
+        document.getElementById("H1ID").classList.remove("H1class")
+
+    })
+
+        function addstyle(){
+            document.getElementById("p1").classList.add("my_style")
+        }
+
+        function removestyle(){
+            document.getElementById("p1").classList.remove("my_style")
+        }
+        
+    function thablu1(){
+    document.getElementById("hablu").innerHTML = "You have clicked Botton 1"
+    }
+
+    function thablu2(){
+    document.getElementById("hablu").innerHTML = "You have clicked Botton 2"
+    }
+
+    function thablu3(){
+    document.getElementById("hablu").innerHTML = "You have clicked Botton 3"
+    }
+    </script>
+    <!-- JS link -->
+    <script src="index.js"></script>
+</body>
+</html>
